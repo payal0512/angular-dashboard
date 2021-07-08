@@ -1,0 +1,36 @@
+@import "https://fonts.googleapis.com/css2?family=Inter&display=swap";
+$background-color: #070d18;
+$font-family: Inter;
+$color-back: #b9b9c8;
+$font-size-14: 14px;
+$color: #ffffff;
+:host{
+    grid-area: detail;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, auto));
+  grid-template-rows: repeat(auto-fit, minmax(5em, auto));
+  grid-column: 1/8;
+  grid-row: 4/5;
+  border-radius: 10px;
+  background-color: #0e192d;
+  padding: 1em 1em 1em 1.5em;
+  margin: 1em 0em 2em 0em;
+}
+.details > div {
+  font-family: $font-family;
+  h1 {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #85859b;
+  }
+  div {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    color: $color;
+  }
+}

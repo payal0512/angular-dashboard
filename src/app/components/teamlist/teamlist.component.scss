@@ -1,0 +1,184 @@
+@import "https://fonts.googleapis.com/css2?family=Inter&display=swap";
+$background-color: #070d18;
+$font-family: Inter;
+$color-back: #b9b9c8;
+$font-size-14: 14px;
+$color: #ffffff;
+:host {
+  grid-area: content;
+}
+
+.players-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1em, auto));
+  grid-template-rows: repeat(auto-fit, minmax(1em, auto));
+  grid-column: 1/8;
+  grid-row: 6/7;
+  width: 100%;
+  height: 100%;
+  background-color: #0e192d;
+  border-radius: 10px;
+  // justify-content: center;
+}
+.search-bar {
+  display: flex;
+  // flex-direction: row;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding: 0em 5em 0em 1em;
+  margin: 1em 0em 0em 1em;
+  input {
+    align-self: center;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #091222;
+    padding: 0.5em 0.5em 0.5em 2em;
+    background-image: url("/assets/img/Group 1159.svg");
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+  }
+}
+.add-team {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  grid-column: 8/9;
+  grid-row: 1/2;
+  border: none;
+  justify-content: flex-end;
+  margin: 1em 2em 0em 0em;
+
+  img {
+    padding: 1em 1em 0em 0em;
+    align-self: flex-start;
+    justify-self: self-end;
+    // align-self: center;
+  }
+  p {
+    padding: 0.3em 0em 0em 0em;
+    font-family: $font-family;
+    font-size: $font-size-14;
+    font-weight: 500;
+    color: #5ddbee;
+    text-align: right;
+  }
+}
+.border {
+  grid-column: 1/9;
+  grid-row: 2/3;
+  height: 2%;
+  background-color: #44445a;
+  margin: 0em 2em 0em 2em;
+}
+.sort {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/9;
+  grid-row: 3/4;
+}
+.s1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: $font-family;
+  font-size: 14px;
+  color: $color;
+  padding: 0em 0em 0em 2em;
+}
+.s2 {
+  text-align: end;
+  justify-content: end;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  float: right;
+  font-family: $font-family;
+  font-size: 14px;
+  color: $color;
+  padding-right: 2em;
+}
+.s3 {
+  color: #85859b;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.team-player1 {
+  display: grid;
+  // flex-direction: row;
+  grid-template-columns: repeat(auto-fit, minmax(8em, auto));
+  grid-template-rows: repeat(auto-fill, minmax(12em, auto));
+  grid-column: 1/9;
+  grid-row: 4/5;
+  grid-gap: 2em;
+  justify-content: center;
+  padding: 1em 2em 1em 2em;
+  margin-bottom: 1em;
+}
+.team-player1 > div {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  background-color: #1c2b47;
+  // justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.outline {
+  margin: 1em 0em 0em 0em;
+  justify-self: center;
+  text-align: center;
+  width: 63px;
+  height: 63px;
+  opacity: 0.7;
+  box-shadow: -8.9px 6.4px 10.2px -1px rgba(0, 0, 0, 0.03);
+  // border-style: solid;
+  border-radius: 50%;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to top,
+    #a4b3bd,
+    #a4b3bd,
+    #a4b3bd,
+    #ffffff,
+    #ffffff
+  );
+  border-image-slice: 1;
+  background-image: linear-gradient(to top, #fdfdfd, #fdfdfd, #d0d0d0);
+}
+.logo1 {
+  text-align: center;
+  width: 2em;
+  height: 3.5em;
+}
+.team-name {
+  font-family: $font-family;
+  font-size: $font-size-14;
+  font-weight: normal;
+  color: #85859b;
+}
+.name2 {
+  font-family: $font-family;
+  font-size: $font-size-14;
+  font-weight: normal;
+  color: $color;
+  flex-grow: 1;
+}
+.play1 {
+  font-family: $font-family;
+  font-size: 12px;
+  font-weight: normal;
+  color: #b9b9c8;
+  // justify-self: flex-end;
+}
+
+.reset {
+  grid-column: 8/9;
+  justify-self: end;
+  padding: 1em 2em 1em 0em;
+}
+.r1 {
+  float: right;
+  padding: 0em 0em 0em 1em;
+  color: #5ddbee;
+  font-family: $font-family;
+  font-size: $font-size-14;
+}

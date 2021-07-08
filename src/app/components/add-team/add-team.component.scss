@@ -10,12 +10,13 @@ $color: #ffffff;
 }
 .page {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, auto));
+  grid-template-columns: repeat(auto-fit, minmax(11em, auto));
   grid-template-rows: repeat(auto-fit, minmax(1em, auto));
   grid-template-areas:
     "header header header header header header header "
     "back back back back back back back "
-    "info info info info gap upload upload "
+    "info info info info gap upload upload"
+    "detail detail detail detail detail detail detail"
     "nav nav nav nav nav nav nav"
     "content content content content content content content";
 
