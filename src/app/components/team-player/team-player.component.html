@@ -1,0 +1,16 @@
+<!-- <div class="team-player1"> -->
+<div class="team-player">
+  <div class="outline">
+    <img [src]="team.imageUrl" class="logo1" />
+  </div>
+  <p class="team-name">{{ team.shortname }}</p>
+  <p class="name2">{{ team.name }}</p>
+  <p
+    class="play1"
+    [style.color]="team.player == 'Players - 12' ? 'white' : 'red'"
+  >
+    {{ team.player }}
+  </p>
+</div>
+
+<!-- </div> -->

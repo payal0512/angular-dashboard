@@ -1,0 +1,79 @@
+@import "https://fonts.googleapis.com/css2?family=Inter&display=swap";
+$background-color: #070d18;
+$font-family: Inter;
+$color-back: #b9b9c8;
+$font-size-14: 14px;
+$color: #ffffff;
+// :host {
+//   grid-column: 1/9;
+//   grid-row: 4/5;
+// }
+// .team-player1 {
+//   display: grid;
+//   // flex-direction: row;
+//   grid-template-columns: repeat(auto-fit, minmax(8em, auto));
+//   grid-template-rows: repeat(auto-fill, minmax(12em, auto));
+//   grid-column: 1/9;
+//   grid-row: 4/5;
+//   grid-gap: 2em;
+//   justify-content: center;
+//   padding: 1em 2em 1em 2em;
+//   margin-bottom: 1em;
+// }
+.team-player {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  // background-color: #1c2b47;
+  // justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.outline {
+  margin: 1em 0em 0em 0em;
+  justify-self: center;
+  text-align: center;
+  width: 63px;
+  height: 63px;
+  opacity: 0.7;
+  box-shadow: -8.9px 6.4px 10.2px -1px rgba(0, 0, 0, 0.03);
+  // border-style: solid;
+  border-radius: 50%;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to top,
+    #a4b3bd,
+    #a4b3bd,
+    #a4b3bd,
+    #ffffff,
+    #ffffff
+  );
+  border-image-slice: 1;
+  background-image: linear-gradient(to top, #fdfdfd, #fdfdfd, #d0d0d0);
+}
+.logo1 {
+  text-align: center;
+  width: 2em;
+  height: 3.5em;
+}
+.team-name {
+  font-family: $font-family;
+  font-size: $font-size-14;
+  font-weight: normal;
+  color: #85859b;
+}
+.name2 {
+  font-family: $font-family;
+  font-size: $font-size-14;
+  font-weight: normal;
+  color: $color;
+  flex-grow: 1;
+}
+.play1 {
+  font-family: $font-family;
+  font-size: 12px;
+  font-weight: normal;
+  color: #b9b9c8;
+  // justify-self: flex-end;
+}

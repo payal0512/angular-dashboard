@@ -1,123 +1,47 @@
-<div class="mask" *ngIf="show == true"></div>
-<div id="mymodal" class="form" *ngIf="show == true">
-  <div class="topbar">
-    <span>Team Repository</span>
+<div class="mask" *ngIf="show == true">
+  <div class="form">
+    <div class="topbar">
+      <span>Team Repository</span>
 
-    <img
-      (click)="close()"
-      src="./assets/img/Group 1286.svg"
-      alt=""
-      srcset=""
-      class="close-btn"
-    />
-  </div>
-  <div class="border-btm"></div>
-  <div class="select-team">Select Teams</div>
-  <div class="search-bar1">
-    <!-- <input type="image" src="./assets/img/Group 1159.svg" /> -->
-    <input type="text" placeholder="Search Teams" value="" />
-  </div>
-  <div class="create-team">
-    <img src="./assets/img/Group 1240.png" alt="" srcset="" />
-    <p>Create New Team</p>
-  </div>
-  <div class="border-btm1"></div>
-  <div class="total-teams">
-    <span class="text-style-1">20</span>&nbsp;
-    <span class="text-style-2">Teams</span>
-  </div>
-  <div class="filter-bar">
-    <span class="text-style-3">Showing:</span>&nbsp;
-    <span class="text-style-4">Indian Premier League Teams</span>&nbsp;
-    <img src="./assets/img/vector.png" />
-  </div>
-  <div class="team-player3">
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
+      <img
+        (click)="close()"
+        src="./assets/img/Group 1286.svg"
+        alt=""
+        srcset=""
+        class="close-btn"
+      />
     </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
+    <div class="border-btm"></div>
+    <div class="select-team">Select Teams</div>
+    <div class="search-bar1">
+      <!-- <input type="image" src="./assets/img/Group 1159.svg" /> -->
+      <input type="text" placeholder="Search Teams" value="" />
     </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
+    <div class="create-team">
+      <img src="./assets/img/Group 1240.png" alt="" srcset="" />
+      <p>Create New Team</p>
     </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
+    <div class="border-btm1"></div>
+    <div class="total-teams">
+      <span class="text-style-1">20</span>&nbsp;
+      <span class="text-style-2">Teams</span>
     </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
+    <div class="filter-bar">
+      <span class="text-style-3">Showing:</span>&nbsp;
+      <span class="text-style-4">Indian Premier League Teams</span>&nbsp;
+      <img src="./assets/img/vector.png" />
     </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
+    <div class="team-player1">
+      <app-team-player class="color" *ngFor="let t of teams" [team]="t">
+      </app-team-player>
     </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
+
+    <div class="add-team-btn">
+      <button routerLink="/add-team">
+        <p>Add Teams</p>
+      </button>
     </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
-    </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
-    </div>
-    <div>
-      <div class="outline3">
-        <img src="./assets/img/team-logo.png" class="logo1" />
-      </div>
-      <p class="team-name2">RCB</p>
-      <p class="name-1">Royal Challengers Bangalore</p>
-      <!-- <p class="play1">Players - 12</p> -->
-    </div>
-  </div>
-  <div class="add-team-btn">
-    <button routerLink="/add-team">
-      <p>Add Teams</p>
-    </button>
-  </div>
-  <!-- <div class="vertical-border"></div>
+    <!-- <div class="vertical-border"></div>
   <div class="vertical-border1"></div> -->
+  </div>
 </div>

@@ -6,11 +6,12 @@ $font-size-14: 14px;
 $color: #ffffff;
 .mask {
   width: 100%;
-  height: 130%;
+  height: 100%;
   position: fixed;
-  top: 0em;
+  top: 0;
   left: 0;
   background-color: rgba($color: #000000, $alpha: 0.6);
+  overflow-y: auto;
 }
 
 .form {
@@ -20,13 +21,10 @@ $color: #ffffff;
   transform: translateX(-50%);
   left: 50%;
   top: 3em;
-  // margin: 3em 0em 0em 25%;
   width: 50%;
-  height: 100%;
-  min-height: 10em;
   min-width: 10em;
   position: absolute;
-  overflow-y: auto;
+  // overflow-y: auto;
   border-radius: 5px;
   background-color: rgba($color: #1c2b47, $alpha: 1);
 
@@ -148,7 +146,8 @@ $color: #ffffff;
   font-weight: normal;
   line-height: 1.4;
 }
-.team-player3 {
+
+.team-player1 {
   display: grid;
   // flex-direction: row;
   grid-template-columns: repeat(auto-fit, minmax(10em, auto));
@@ -158,59 +157,12 @@ $color: #ffffff;
   grid-gap: 1em;
   justify-content: center;
   padding: 1em 2em 1em 2em;
-  overflow-y: auto;
-}
-.team-player3 > div {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba($color: #0e192d, $alpha: 0.4);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.outline3 {
-  margin: 1em 0em 0em 0em;
-  justify-self: center;
-  text-align: center;
-  width: 63px;
-  height: 63px;
-  opacity: 0.7;
-  box-shadow: -8.9px 6.4px 10.2px -1px rgba(0, 0, 0, 0.03);
-  // border-style: solid;
-  border-radius: 50%;
-  border-width: 1px;
-  border-image-source: linear-gradient(
-    to top,
-    #a4b3bd,
-    #a4b3bd,
-    #a4b3bd,
-    #ffffff,
-    #ffffff
-  );
-  border-image-slice: 1;
-  background-image: linear-gradient(to top, #fdfdfd, #fdfdfd, #d0d0d0);
+.color {
+  background-color: rgba($color: #0e192d, $alpha: 0.4);
 }
-.logo1 {
-  text-align: center;
-  width: 2em;
-  height: 3.5em;
-}
-.team-name2 {
-  font-family: $font-family;
-  font-size: $font-size-14;
-  font-weight: normal;
-  color: #85859b;
-}
-.name-1 {
-  font-family: $font-family;
-  font-size: $font-size-14;
-  font-weight: normal;
-  color: $color;
-  flex-grow: 1;
-}
+
 .add-team-btn {
   grid-column: 2/3;
   grid-row: 7/8;

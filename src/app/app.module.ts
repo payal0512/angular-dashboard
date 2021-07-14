@@ -13,6 +13,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { TeamlistComponent } from './components/teamlist/teamlist.component';
 import { AddTeamComponent } from './components/add-team/add-team.component';
 import { TeamComponent } from './components/team/team.component';
+import { TeamPlayerComponent } from './components/team-player/team-player.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TeamComponent } from './components/team/team.component';
     TeamlistComponent,
     AddTeamComponent,
     TeamComponent,
+    TeamPlayerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

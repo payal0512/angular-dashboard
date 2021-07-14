@@ -1,123 +1,32 @@
 <div class="players-wrapper">
-    <div class="search"></div>
-    <div class="search-bar">
-        <input type="text" placeholder="Search Teams" value="" />
-
-    </div>
-    <div class="add-team">
-      <img src="./assets/img/Group 1240.png" alt="" srcset="" />
-      <p>Add Teams</p>
-    </div>
-    <div class="border"></div>
-    <div class="sort">
-      <div class="s1">10 Teams</div>
-      <div class="s2">
-        <span class="s3">Sort By: </span>&nbsp;
-        <span class="s4">Recently Created</span>&nbsp;
-        <img src="./assets/img/vector.png" class="vector" style="color: #85859b" />
-      </div>
-    </div>
-    <div class="team-player1">
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1" style="color: #e84d4d">Players - 5</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1" style="color: #e84d4d">Players - 5</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1" style="color: #e84d4d">Players - 5</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1" style="color: #e84d4d">Players - 5</p>
-      </div>
-      <div>
-        <div class="outline">
-          <img src="./assets/img/team-logo.png" class="logo1" />
-        </div>
-        <p class="team-name">RCB</p>
-        <p class="name2">Royal Challengers Bangalore</p>
-        <p class="play1">Players - 12</p>
-      </div>
-    </div>
-
-    <div class="reset">
-      <img src="./assets/img/Group 1448.svg" alt="" srcset="" />
-      <div class="r1">Reset Team Data</div>
+  <div class="search"></div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search Teams" value="" />
+  </div>
+  <div class="add-team">
+    <img src="./assets/img/Group 1240.png" alt="" srcset="" />
+    <p>Add Teams</p>
+  </div>
+  <div class="border"></div>
+  <div class="sort">
+    <div class="s1">10 Teams</div>
+    <div class="s2">
+      <span class="s3">Sort By: </span>&nbsp;
+      <span class="s4">Recently Created</span>&nbsp;
+      <img
+        src="./assets/img/vector.png"
+        class="vector"
+        style="color: #85859b"
+      />
     </div>
   </div>
+
+  <div class="team-player1">
+    <app-team-player class="color" *ngFor="let t of teams" [team]="t"> </app-team-player>
+  </div>
+
+  <div class="reset">
+    <img src="./assets/img/Group 1448.svg" alt="" srcset="" />
+    <div class="r1">Reset Team Data</div>
+  </div>
+</div>

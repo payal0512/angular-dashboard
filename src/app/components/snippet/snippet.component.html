@@ -1,22 +1,8 @@
 <div class="navbar">
-  <div>
-    <img src="./assets/img/Group 1170.svg" alt="" srcset="" />
-    <p>Events</p>
-  </div>
-  <div class="nav2">
-    <img src="./assets/img/Group 1219.svg" alt="" srcset="" />
-    <p style="color: #5ddbee">Teams</p>
-  </div>
-  <div>
-    <img src="./assets/img/Vector.svg" alt="" srcset="" />
-    <p>Merchandises</p>
-  </div>
-  <div>
-    <img src="./assets/img/Group.svg" alt="" srcset="" />
-    <p>Commentators</p>
-  </div>
-  <div>
-    <img src="./assets/img/Group 1219_2.svg" alt="" srcset="" />
-    <p>Sponsors</p>
+  <div *ngFor="let s of snippets">
+    <img [src]="s.imageUrl" alt="" srcset="" />
+    <p [style.color]="s.name == 'Teams' ? '#5ddbee' : '#85859b'">
+      {{ s.name }}
+    </p>
   </div>
 </div>
